@@ -1,0 +1,9 @@
+#isMenu {
+  list-style: none;
+  padding: 0;
+}
+#isMenu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+}

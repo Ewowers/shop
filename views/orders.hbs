@@ -1,0 +1,38 @@
+<div class="container-fluid col-10">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="Name" class="form-label">Ваше имя</label>
+        <input type="text" class="form-control" id="Name" aria-describedby="emailHelp" placeholder="Ваше имя" />
+      </div>
+      <div class="mb-3">
+        <label for="Phone" class="form-label">Ваш телефон</label>
+        <input type="tel" class="form-control" id="Phone" aria-describedby="emailHelp" placeholder="Ваш телефон" />
+      </div>
+      <div class="mb-3">
+        <label for="Home" class="form-label">Адресс доставки</label>
+        <input type="text" class="form-control" id="Home" aria-describedby="emailHelp" placeholder="Адресс доставки" />
+      </div>
+      <div class="mb-3">
+        <label for="Code" class="form-label">Промокод</label>
+        <input type="text" class="form-control" id="Code" aria-describedby="emailHelp" placeholder="Промокод" />
+      </div>
+      <div class="mb-3">
+        <label for="Comment" class="form-label">Уточнение к заказу</label>
+        <textarea id="Comment" class="form-control" rows="8"></textarea>
+      </div>
+
+    </div>
+    <div class="col-md-6">
+      <div class="contanier-fluid" id="basketEki" style="overflow: scroll; max-height: 540px; overflow-x: hidden;">
+
+      </div>
+      <p class="h2 mt-2 d-flex justify-content-between"><span>Итог</span> <span id="isItog">0тг</span></p>
+    </div>
+    <div class="col-12">
+      <button class="btn-dark btn" id="xml">Заказать</button>
+      <a href="/" class="btn-info btn">Вернутся к покупкам</a>
+    </div>
+  </div>
+</div>
+<script src="/order.js"></script>

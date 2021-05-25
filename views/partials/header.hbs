@@ -1,0 +1,70 @@
+<header class="container-fluid">
+  <div class="py-2 row justify-content-center">
+    <div class="col-10">
+      <div class="d-flex justify-content-between">
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          style="font-size: 24px;"
+        >
+          <i class="fas fa-bars"></i>
+          Menu
+        </button>
+        <p class="h1">
+          Geek market
+        </p>
+        <div class="d-flex" id="listMenu">
+          <button id="basket" class="btn">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Меню</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <p class="h3">Каталог</p>
+      <ul id="isMenu">
+        <li><a href="/">Главное</a></li>
+        <li><a href="/catogory/backpacks">Рюкзаки, сумки, шопперы</a></li>
+        <li><a href="/catogory/figurines">Фигурки</a></li>
+        <li><a href="/catogory/clothes">Одежда</a></li>
+        <li><a href="/catogory/accessories">Акссесуары</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn w-100 d-flex justify-content-between" onclick="closeNav()">
+    <span>Ваша Корзина</span>
+    <span>&times;</span></a>
+  <div class="container-fluid">
+
+  </div>
+  <div class="footer mt-3">
+    <a href="/orders" class="btn btn-dark">Оформить заказ</a>
+  </div>
+</div>
+<div id="main">
+  ...
+</div>
+<script>
+  function openNav() { document.getElementById("mySidenav").style.width = "35%"; } function closeNav() {
+  document.getElementById("mySidenav").style.width = "0"; } document.querySelector('#basket').addEventListener('click',
+  openNav)
+</script>
+<style>
+  #listMenu button{ font-size: 24px; }
+</style>

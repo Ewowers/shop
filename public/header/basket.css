@@ -1,0 +1,65 @@
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 ширина - изменить это с помощью JavaScript */
+  position: fixed; /* Оставайтесь на месте */
+  z-index: 99; /* Оставайтесь сверху */
+  top: 0; /* Оставайтесь наверху */
+  right: 0;
+  background-color: #fff; /* Фон черный*/
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  padding-top: 60px; /* Поместите контент в 60px сверху */
+  transition: 0.5s; /* 0.5 второй эффект перехода слайда в боковой навигации */
+}
+
+/* Ссылки меню навигации */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Когда вы наводите курсор мыши на навигационные ссылки, изменяется их цвет */
+.sidenav a:hover {
+  color: #000;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Стиль содержимого страницы - используйте это, если вы хотите сдвинуть содержимое страницы вправо при открытии боковой навигации */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+#mySidenav::-webkit-scrollbar {
+  width: 1px;
+}
+#mySidenav::-webkit-scrollbar-thumb {
+  background: #000;
+}
+#mySidenav .footer a {
+  color: #fff;
+}
+#mySidenav .footer a:hover {
+  color: #000;
+  background: #fff;
+}
+
+/* На экранах меньшего размера, где высота меньше 450px, измените стиль sidenav (меньше отступов и меньший размер шрифта) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

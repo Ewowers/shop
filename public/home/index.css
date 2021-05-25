@@ -1,0 +1,14 @@
+.carousel-item img {
+  height: 700px;
+}
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#pills-tab a {
+  color: #000;
+}
+#pills-tab .active {
+  color: #fff;
+  background: #000;
+}
